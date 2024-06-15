@@ -10,13 +10,8 @@ public class Main {
         Observable weatherStation = new WeatherStationImp();
         Observable stock = new StockObservableImp();
 
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(1).append("char").append(true);
-        System.out.println(stringBuilder);
-
-        Observable stockObservable = new StockObservableImp();
-        Display tvDisplayForStock = new TV(stockObservable);
-        Display phoneDisplayForStock = new Phone(stockObservable);
+        Display tvDisplayForStock = new TV(stock);
+        Display phoneDisplayForStock = new Phone(stock);
 
         Display tvDisplayForWeather = new TV(weatherStation);
         Display phoneDisplayForWeather = new Phone(weatherStation);
