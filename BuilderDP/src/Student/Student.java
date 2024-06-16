@@ -34,4 +34,17 @@ public class Student {
     public String getMotherName() {
         return motherName;
     }
+
+    public List<String> getSubjects() {
+        return subjects;
+    }
+
+    public String toString(){
+        return  " roll number: " + this.rollNo +
+                " name: " + this.name +
+                " father name: " + this.fatherName +
+                " mother name: " + this.motherName +
+                " subjects: " + subjects.get(0) + "," + subjects.get(1);
+    }
+
 }

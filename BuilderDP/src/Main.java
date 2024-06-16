@@ -15,6 +15,7 @@ public class Main {
         Director director1 = new Director(new MBAStudentBuilder());
         Student mbaStudent = director1.createStudent();
         System.out.println(mbaStudent.getRollNo());
+        System.out.println(mbaStudent.toString());
         System.out.println(mbaStudent.getSubjects());
     }
 }
